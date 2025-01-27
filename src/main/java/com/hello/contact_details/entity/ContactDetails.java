@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 public class ContactDetails {
     @Id
     private Integer contactId;
+    
 
     public String getAddress() {
         return Address;
