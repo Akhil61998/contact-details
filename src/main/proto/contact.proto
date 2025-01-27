@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.hello.contact";
+
+service ContactDetailsService {
+  rpc GetContactDetails(ContactDetailsRequest) returns (ContactDetailsResponse);
+}
+
+message ContactDetailsRequest {
+  int32 contactId = 1;
+}
+
+message ContactDetailsResponse {
+  int32 contactId = 1;
+  string address = 2;
+  string phoneNumber = 3;
+}
